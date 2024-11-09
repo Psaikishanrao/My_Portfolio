@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Faculty+Glyphic&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+* {
+    
+        font-family: "Faculty Glyphic", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+      
+      
+}
+.glow-icon i {
+        transition: all 0.3s ease;
+        color: #888888;
+      }
+      
+      .glow-icon i:hover {
+       
+        color: #00ffcc; 
+        text-shadow: 0 0 8px rgba(0, 255, 204, 1), 
+                     0 0 16px rgba(0, 255, 204, 0.8), 
+                     0 0 24px rgba(0, 255, 204, 0.6);
+      }
+      
+
+.k{
+        animation: k 1s infinite;
+}
+@keyframes k{
+        0%{
+        opacity: 1;
+        }
+        50%{
+        opacity: 0.5;  
+        }
+        100%{
+        opacity: 0.5;      
+        }
+        
+}
+.s{
+        animation: s 1s infinite;
+}
+@keyframes s {
+        0%{
+        opacity: 0.5;
+        }
+        50%{
+        opacity: 1;  
+        }
+        100%{
+        opacity: 0.5;      
+        }
+        
+}
+.r{
+        animation: r 1s infinite;
+}
+@keyframes r {
+        0%{
+        opacity: 0.5;
+        }
+        50%{
+        opacity: 0.5;  
+        }
+        100%{
+        opacity: 1;      
+        }
+        
+}
