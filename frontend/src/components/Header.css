@@ -1,0 +1,113 @@
+.NavbarItems {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 78%;
+  height: 40px;
+  color: rgb(21, 21, 21);
+  font-size: 1.2rem;
+  padding: 0 30px;
+  background-image: url("/navbar.jpg");
+  background-size: cover;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+  position: fixed;
+  z-index: 100;
+  border-radius: 13px;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.nav-menu {
+  display: grid;
+  grid-template-columns: repeat(7, auto);
+  grid-gap: 20px;
+  align-items: center;
+  text-align: center;
+  justify-content: end;
+  list-style: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-links {
+  background: none;
+  border: none;
+  color: rgb(14, 13, 13);
+  font-size: 1.2rem;
+  padding: 0.7rem 1rem;
+  cursor: pointer;
+  text-decoration: none;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+}
+
+.nav-links i {
+  padding-right: 10px;
+}
+
+.nav-links:hover {
+  background: rgba(59, 165, 148, 0.781);
+  border-radius: 4px;
+  transition: all 0.2s ease-out;
+  padding: 0.2rem 1rem;
+  color: #f3ff07;
+}
+
+.fa-bars,
+.fa-times {
+  color: #fff;
+  cursor: pointer;
+}
+
+.menu-icons {
+  display: none;
+}
+
+@media screen and (max-width: 850px) {
+  .nav-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background: rgba(255, 253, 253, 0.457);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+    border-radius: 13px;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    align-items: stretch;
+    padding: 80px 0 30px 0;
+    margin: 0;
+    transform: translateY(-100%);
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+    z-index: -1;
+  }
+
+  .nav-menu.active {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  .nav-links {
+    color: #222;
+    font-size: small;
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
+  .nav-links:hover {
+    background: rgba(0, 128, 255, 0.15) !important;
+    backdrop-filter: blur(20px);
+    transition: all 0.2s ease-out;
+  }
+  .menu-icons {
+    display: block;
+  }
+  .NavbarItems.scrolled {
+    background-image: none;
+  }
+}

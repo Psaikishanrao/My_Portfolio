@@ -11,12 +11,12 @@ function Contact() {
     email: "saikishanrao768@gmail.com",
     mobile: "7681082741",
     country: "INDIA",
-    college: "Silicon University, Bhubneswar",
+    occupation: "Silicon University, Bhubneswar",
   };
 
   return (
     <div>
-      <SectionTitle title="Say Hello" />
+      <SectionTitle title="Say Hello" id={"contact"}/>
       <div className="flex sm:flex-col items-center justify-between gap-10">
         <div className="flex flex-col gap-1 w-1/2 sm:w-full">
           <p className="text-tertiary sm:text-sm">{"{"}</p>

@@ -28,7 +28,7 @@ export const projects = [
           "https://672f188933de73158f1c997a--imagos.netlify.app//Student_Assessment/Team.png"
           
         ],
-        description: `The Student Assessment Portal is a secure platform for managing assessments, with role-based access for students and administrators to track results and oversee question management. Built with MySQL, JSP, Java Servlets, and Bootstrap, it follows MVC architecture for scalability and includes robust data validation and stability testing.`,
+        description: `The Student Assessment Portal is a secure platform for managing assessments, with role-based access for students and administrators to track results and oversee question management. it follows MVC architecture for scalability and includes robust data validation and stability testing.`,
         link: 'https://yourportal.netlify.app/StudentAssessment'
       },
       {

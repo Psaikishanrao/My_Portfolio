@@ -6,8 +6,12 @@ export default {
   ],
   theme: {
     extend: {
+       backgroundImage: {
+        'primary': 'linear-gradient(135deg, #2B2D42, #1A1A3F, #0D1B2A)',
+      },
       colors:{
-        "primary":"#0A192F",
+        // "primary":"#121212",
+        // "primary":"#181818",
         "secondary":"#F97316",
         "tertiary":"#54D6BB",
       }
