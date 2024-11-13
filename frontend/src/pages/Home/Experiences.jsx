@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import SectionTitle from "../../components/SectionTitle";
-import { experiences } from "../../resources/Experiences";
+import { experiences } from "../../resources/experiences";
 function Experiences() {
     const[selectedItemIndex,setSelectedItemIndex]=useState(0);
   return (
